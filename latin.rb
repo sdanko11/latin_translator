@@ -4,10 +4,10 @@ class PigLatinTranslation
 attr_reader :phrase
 
   def initialize(phrase)
-      @phrase = phrase
-      @words_in_phrase = []
-      @translated_phrase = []
-      @constants = []
+    @phrase = phrase
+    @words_in_phrase = []
+    @translated_phrase = []
+    @constants = []
   end
 
   def words
@@ -53,7 +53,8 @@ attr_reader :phrase
         "#{@phrase.downcase}ay"
     end
   end
+
 end
 
-word = PigLatinTranslation.new("happy glove")
+word = PigLatinTranslation.new("glove glove gllove")
 word.words
