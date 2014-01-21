@@ -1,13 +1,9 @@
-require 'pry'
 class PigLatinTranslation
-
-attr_reader :phrase
 
   def initialize(phrase)
     @phrase = phrase
     @words_in_phrase = []
     @translated_phrase = []
-    @constants = []
   end
 
   def words
@@ -50,11 +46,11 @@ attr_reader :phrase
         @phrase.slice!(0)
         @phrase[0]
       end
-        "#{@phrase.downcase}ay"
+        print "#{@phrase.downcase}ay"
     end
   end
 
 end
 
-word = PigLatinTranslation.new("glove glove gllove")
+word = PigLatinTranslation.new("glove")
 word.words
